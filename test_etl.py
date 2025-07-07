@@ -4,7 +4,7 @@ import pandas as pd
 def test_extract():
   input_file = 'data/input_data.csv'
   data = etl.extract_data(input_file)
-  assert data.any()
+  assert data is not None and len(data) > 0
 
 
 def test_transform():
