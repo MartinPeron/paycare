@@ -10,5 +10,8 @@ COPY . /app
 # Install the Python dependencies
 RUN pip install -r requirements.txt
 
+# Test the application
+CMD ["pytest", "."]
+
 # Run the application
 CMD ["python", "etl.py"]
