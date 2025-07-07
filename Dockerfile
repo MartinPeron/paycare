@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Test the application
-RUN pip install -r requirements.txt
+RUN pytest .
 
 # Run the application
 CMD ["python", "etl.py"]
