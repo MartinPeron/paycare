@@ -13,8 +13,8 @@ def test_transform():
   })
   transformed_data = etl.transform_data(data)
   assert transformed_data == pd.DataFrame({
-    'salary': [50],
-    'tax': [5],
-    'next_salary': [45],
+    'salary': [50.],
+    'tax': [5.],
+    'next_salary': [45.],
   })
   
