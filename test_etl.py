@@ -15,6 +15,6 @@ def test_transform():
   assert transformed_data == pd.DataFrame({
     'salary': [50.],
     'tax': [5.],
-    'next_salary': [45.],
+    'net_salary': [45.],
   })
   
