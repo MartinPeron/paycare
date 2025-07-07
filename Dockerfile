@@ -1,5 +1,14 @@
-from python:3.9
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
 
-pip install -r requirements.txt
+# Set the working directory
+WORKDIR /app
 
-python etl.py
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install the Python dependencies
+RUN pip install -r requirements.txt
+
+# Run the application
+CMD ["python", "app/etl.py"]
