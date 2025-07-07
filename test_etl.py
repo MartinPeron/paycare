@@ -12,7 +12,7 @@ def test_transform():
     'salary': [50, None]
   })
   transformed_data = etl.transform_data(data)
-  assert transformed_data == pd.DataFframe({
+  assert transformed_data == pd.DataFrame({
     'salary': [50],
     'tax': [5],
     'next_salary': [45],
