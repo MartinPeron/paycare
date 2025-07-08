@@ -7,7 +7,6 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-
 # Install the Python dependencies
 RUN pip install -r requirements.txt
 
