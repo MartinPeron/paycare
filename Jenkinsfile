@@ -14,6 +14,7 @@ pipeline {
                 script {
                     // Build the Docker image using the Dockerfile
                     sh 'docker build . -t paycare_image'
+                    echo 'Docker image built successfully!'
                 }
             }
         }
@@ -23,6 +24,7 @@ pipeline {
                 script {
                     // Build the Docker image using the Dockerfile
                     sh 'docker run paycare_image'
+                    echo 'Docker image run successfully!'
                 }
             }
         }
